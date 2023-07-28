@@ -40,6 +40,11 @@ def getLineal(listVal):
     # Create the plot
     plt.plot(x, y)
 
+    plt.ylabel('EJE Y')
+    plt.xlabel('EJE X')
+    plt.title('FUNCIÓN LINEAL')
+    plt.grid(True)
+
     img_buf = io.BytesIO()
     plt.savefig(img_buf, format='png')
 
@@ -74,6 +79,11 @@ def getCuadratica(listVal):
     fig = plt.figure(figsize = (10, 5))
     # Create the plot
     plt.plot(x, y)
+
+    plt.ylabel('EJE Y')
+    plt.xlabel('EJE X')
+    plt.title('FUNCIÓN CUADRÁTICA')
+    plt.grid(True)
 
     img_buf = io.BytesIO()
     plt.savefig(img_buf, format='png')
@@ -111,6 +121,11 @@ def getCubica(listVal):
     fig = plt.figure(figsize = (10, 5))
     # Create the plot
     plt.plot(x, y)
+
+    plt.ylabel('EJE Y')
+    plt.xlabel('EJE X')
+    plt.title('FUNCIÓN CÚBICA')
+    plt.grid(True)
 
     img_buf = io.BytesIO()
     plt.savefig(img_buf, format='png')
